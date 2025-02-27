@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page For TimeMaster Application">
+    <link rel="stylesheet" href="./CSS/aos.css">
+    <link rel="stylesheet" href="CSS/fontello.css">
+    <link rel="stylesheet" href="./CSS/output.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="CSS/toastr.min.css">
+    <title>Document</title>
+</head>
+<body class="selection:bg-violet-900 selection:text-gray-300">
+<!--Start Hero And navbar -->
+<header>
+    <nav class="bg-red fixed z-30 top-0 w-full bg-[#00000081] ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <span class="self-center text-2xl font-semibold whitespace-nowrap logo">Time Master</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex cursor-pointer items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 " aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border  border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 items-center">
+              <li>
+                <a data-en="Home" data-ar="الرئيسية" href="#home" class="text-xl md:text-base block hover:bg-gray-100 text-gray-100 transition duration-150 md:px-3 md:py-2 hover:text-gray-950 py-2 px-3 rounded-sm md:bg-transparent  md:p-0" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a data-en="Features" data-ar="المزايا" id="navFeatures" href="#features" class="text-xl md:text-base block hover:bg-gray-100 text-gray-100 transition duration-150 md:px-3 md:py-2 hover:text-gray-950 py-2 px-3 rounded-sm md:border-0 md:p-0">Features</a>
+              </li>
+              <li>
+                <a data-en="Pricing" data-ar="التسعير" id="navPricing" href="#pricing" class="text-xl md:text-base block hover:bg-gray-100 text-gray-100 transition duration-150 md:px-3 md:py-2 hover:text-gray-950 py-2 px-3  rounded-sm md:border-0 md:p-0">Pricing</a>
+              </li>
+              <li>
+                <a data-en="Contact" data-ar="تواصل معنا" id="navContact" href="#contact" class="text-xl md:text-base block hover:text-black text-gray-100 transition duration-150 md:px-3 md:py-2 hover:bg-gray-100  py-2 px-3 rounded-sm md:border-0 md:p-0">Contact</a>
+              </li>
+              <select class="text-black rounded-xl" name="" id="">
+                  <optgroup>
+                      <option data-en="English" data-ar="الإنجليزية" value="en">English</option>
+                      <option data-en="Arabic" data-ar="العربية" value="ar">Arabic</option>
+                  </optgroup>
+              </select>
+            </ul>
+        </div>
+    </div>
+      </nav>
+    <section class="overflow-hidden h-[80vh] md:h-[100vh]" id="home">
+    <div class="content absolute left-[50%] top-[35%] text-center w-full">
+        <h1 data-en="Take Control of Your Time with TimeMaster." data-ar=".سيطر على وقتك مع تايم ماستر" class="text-gray-50 text-4xl md:text-5xl leading-14 font-medium">Take Control of Your Time with TimeMaster</h1>
+        <p data-en="A simple and effective tool to organize your daily tasks." data-ar="أداة بسيطة وفعالة لتنظيم مهامك اليومية." class="text-xl text-gray-300 my-3 mb-9">A simple and effective tool to organize your daily tasks.</p>
+        <a href="#home" aria-label="Download Application" data-en="Try For Free" data-ar="جرّب مجانًا"  class="CTA text-gray-100 px-6 py-3 mt-6 text-2xl cursor-pointer rounded-xl font-bold border-2 border-blue-900">Try for Free</a>
+    </div>
+    <img data-aos="zoom-in" class="fade-right absolute -z-10 min-w-[200px] bottom-0 w-1/2 sm:w-[44%] md:w-[30%] lg:w-[20%]  2xl:w-[15%] left-1/2 translate-x-[-50%] "  loading="lazy" src="./assets/pngwing.com.webp" alt="time master app time managment">
+    </section>
+</header>
+<!--End Hero And navbar -->
+<!--Start Features Section -->
+<section class="bg-gray-100 py-10 overflow-hidden" id="features">
+    <h2 data-en="Why Choose Time Master" data-ar="لماذا تختار تايم ماستر؟" class="sectionTitle text-text-title">Why Choose Time Master?</h2>
+    <div class="container lg:w-1/2 ">
+        <div class="row py-6">
+            <div data-aos="fade-right" class="cont w-full sm:w-1/2 md:w-1/3 p-3">
+                <div class=" shadow box group text-center relative z-10 px-4 py-5 rounded-xl">
+                     <i class="group-hover:text-gray-900 group-hover:border-gray-900 transition duration-500 demo-icon icon-list-bullet text-icon p-2 border-4 border-icon rounded-full text-3xl"></i>
+                    <h3 data-en="Task Management" data-ar="إدارة المهام" class="group-hover:text-gray-900 transition duration-500 text-title-two font-bold text-xl mt-5">Task Management</h3>
+                    <p data-en="Prioritize your tasks and stay organized." data-ar="رتب مهامك وحدد أولوياتك بسهولة." class="group-hover:text-gray-200 transition duration-500 text-gray-600">Prioritize your tasks and stay organized.</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="cont w-full sm:w-1/2 md:w-1/3 p-3">
+                <div class="shadow-md group box text-center relative z-10 px-4 py-5 rounded-xl">
+                    <i class="group-hover:text-gray-900 group-hover:border-gray-900 transition duration-500 demo-icon icon-bell-alt text-icon p-2 border-4 border-icon rounded-full text-3xl"></i>
+                    <h3 data-en="Smart Reminders" data-ar="تذكيرات ذكية" class="group-hover:text-gray-900 transition duration-500 text-title-two font-bold text-xl mt-5">Smart Reminders</h3>
+                    <p data-en="Never forget an important task again!" data-ar="لن تنسى أي مهمة بعد الآن!" class="group-hover:text-gray-200 transition duration-500 text-gray-600">Never forget an important task again!</p>
+                </div>
+            </div>
+            <div data-aos="fade-left" class="cont w-full sm:w-1/2 md:w-1/3 p-3">
+                <div class="shadow-md group box text-center relative z-10 px-4 py-5 rounded-xl">
+                    <i class="group-hover:text-gray-900 group-hover:border-gray-900 transition duration-500 deom-icon icon-chart-line text-icon p-2 border-4 border-icon rounded-full text-3xl"></i>
+                    <h3 data-en="Performance Reports" data-ar="تقارير الأداء" class="group-hover:text-gray-900 transition duration-500 text-title-two font-bold text-xl mt-5">Performance Reports</h3>
+                    <p data-en="Track your productivity over time." data-ar="تابع إنتاجيتك على مدار الوقت." class="group-hover:text-gray-200 transition duration-500 text-gray-600">Track your productivity over time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Features Section -->
+<!--Start Pricing Section -->
+<section class="py-10 overflow-hidden" id="pricing">
+    <h2 data-en="Choose Your Plan" data-ar="اختر خطتك" class="sectionTitle text-gray-100">Choose Your Plan</h2>
+    <div class="container xl:w-1/2 py-6">
+        <div class="row">
+            <div data-aos="fade-right" class="w-full sm:w-1/2 p-2">
+                <div class="hover:border-icon transition duration-500 border-2 border-gray-200 flex flex-col h-full group box relative p-1 text-center shadow-2xl">
+                    <h3 data-en="Free Plan" data-ar="الخطة المجانية" class="group-hover:text-gray-950 text-gray-300 font-bold text-xl mt-2 transition duration-500">Free Plan</h3>
+                    <i class="group-hover:text-gray-950 transition duration-500 deom-icon icon-stopwatch text-icon p-4 text-3xl"></i>
+                    <h4 data-en="$0/month" data-ar="0$/شهريًا" class="group-hover:text-gray-950 transition duration-500 text-gray-300">$0/month</h4>
+                    <div class="services px-6 pt-2 pb-0">
+                        <span class="my-1 flex gap-1 items-center group-hover:text-gray-950 transition duration-500 text-gray-300 text-left font-medium"><i class="demo-icon icon-ok "></i>  <p data-en="Basic Task Management" data-ar="إدارة مهام أساسية">Basic Task Management</p></span>
+                        <span class="my-1 flex gap-1 items-center group-hover:text-gray-950 transition duration-500 text-gray-300 text-left font-medium"><i class="demo-icon icon-ok "></i> <p data-en="Limited Reminders." data-ar="عدد محدود من التذكيرات"  > Limited Reminders.</p></span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div data-aos="fade-left" class="w-full sm:w-1/2 p-2">
+                <div class="hover:border-icon transition duration-500 border-2 border-gray-200 flex flex-col h-full group box relative p-1 text-center shadow-2xl">
+                    <h3 data-en="Pro Plan" data-ar="الخطة الاحترافية" class="group-hover:text-gray-950 text-gray-300 font-bold text-xl mt-2 transition duration-500">Pro Plan</h3>
+                    <i class="group-hover:text-gray-950 transition duration-500 deom-icon icon-stopwatch text-icon p-4 text-3xl"></i>
+                    <h4 data-en="$10/month" data-ar="10$/شهريًا" class="group-hover:text-gray-950 transition duration-500 text-gray-300">$10/month</h4>
+                    <div class="services px-6 pb-6 pt-2">
+                        <span class="my-1 flex gap-1 items-center group-hover:text-gray-950 transition duration-500 text-gray-300 text-left font-medium"><i class="demo-icon icon-ok"></i> <p data-en="Unlimited Tasks." data-ar="عدد غير محدود من المهام" >Unlimited Tasks.</p></span>
+                        <span class="my-1 flex gap-1 items-center group-hover:text-gray-950 transition duration-500 text-gray-300 text-left font-medium"><i class="demo-icon icon-ok"></i> <p data-en="Advanced Reminders." data-ar=".تذكيرات متقدمة"> Advanced Reminders.</p></span>
+                        <span class="my-1 flex gap-1 items-center group-hover:text-gray-950 transition duration-500 text-gray-300 text-left font-medium"><i class="demo-icon icon-ok"></i> <p data-en="Performance  Reports." data-ar="تقارير أداء"> Performance  Reports.</p></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Pricing Section -->
+<!--Start Testimonials Section -->
+<section class="bg-gray-100 py-10" id="tetimonials">
+    <h2 data-en="What Our Users Say" data-ar="آراء مستخدمينا" class="sectionTitle text-text-title">What Our Users Say</h2>
+        <div class="owl-carousel owl-theme py-7 px-5">
+            <div class="flex justify-center flex-col item text-center p-2 rounded-2xl relative h-[250px] ">
+                <div class="innerContent border-2 border-title-two rounded-2xl py-10 px-3 bg-gray-200">
+                    <div class="image w-1/6 mx-auto absolute top-0 left-1/2 translate-x-[-50%]"><img loading="lazy" class="rounded-full border-4 border-gray-300 " src="assets/avatar-01.webp" alt="avatar testimonials reviews"></div>
+                    <p data-en="TimeMaster changed my life! I'm more productive than ever." data-ar="تايم ماستر غير حياتي! أصبحت أكثر إنتاجية." class="text-gray-700 mt-4">TimeMaster changed my life! I'm more productive than ever.</p>
+                    <h4 data-en="John Doe" data-ar="أحمد محمد" class=" font-bold text-xl text-title-two">John Doe</h4>
+                </div>
+            </div>
+            <div class="flex justify-center flex-col item text-center p-2 rounded-2xl relative h-[250px] ">
+                <div class="innerContent border-2 border-title-two rounded-2xl py-10 px-3 bg-gray-200">
+                    <div class="image w-1/6 mx-auto absolute top-0 left-1/2 translate-x-[-50%]"><img loading="lazy" class="rounded-full border-4 border-gray-300 " src="assets/avatar-02.webp" alt="avatar testimonials reviews"></div>
+                    <p data-en="Amazing tool! The reminders keep me on track every day." data-ar="أداة رائعة! التذكيرات تساعدني كل يوم." class="text-gray-700 mt-4">Amazing tool! The reminders keep me on track every day.</p>
+                    <h4 data-en="Sarah Smith" data-ar="سارة علي" class=" font-bold text-xl text-title-two">Sarah Smith</h4>
+                </div>
+            </div>
+            <div class="flex justify-center flex-col item text-center p-2 rounded-2xl relative h-[250px] ">
+                <div class="innerContent border-2 border-title-two rounded-2xl py-10 px-3 bg-gray-200">
+                    <div class="image w-1/6 mx-auto absolute top-0 left-1/2 translate-x-[-50%]"><img loading="lazy" class="rounded-full border-4 border-gray-300 " src="assets/avatar-03.webp" alt="avatar testimonials reviews"></div>
+                    <p data-en="TimeMaster changed my life! I'm more productive than ever." data-ar="تايم ماستر غير حياتي! أصبحت أكثر إنتاجية." class="text-gray-700 mt-4">TimeMaster changed my life! I'm more productive than ever.</p>
+                    <h4 data-en="John Doe" data-ar="أحمد محمد" class=" font-bold text-xl text-title-two">John Doe</h4>
+                </div>
+            </div>
+        </div>
+</section>
+<!--End Testimonials Section -->
+<!--Start Contact Us Section -->
+<section id="contact" class="py-10">
+    <h2 data-en="Contact Us" data-ar="تواصل معنا" class="sectionTitle text-gray-100">Contact Us</h2>
+    <div class="container py-10 w-[95%]">
+        <div class="map "><iframe title="Our Location Map" class="w-full  md:w-full mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193597.01649943826!2d-73.81470082403786!3d40.69702432302596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z2YbZitmI2YrZiNix2YPYjCDYp9mE2YjZhNin2YrYp9iqINin2YTZhdiq2K3Yr9ip!5e0!3m2!1sar!2seg!4v1740319286861!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="inputGroup row gap-x-[4%] mt-5">
+                    <input name="nameInput" data-en="Your Name..." data-ar="أسمك..." id="nameInput" type="text" class="input w-full md:w-[48%]" placeholder="Your Name...">
+                    <input name="emailInput" data-en="Your Email..." data-ar="البريد الإلكتروني..." id="emailInput" type="email" class="input w-full md:w-[48%] " placeholder="Your Email...">
+                </div>
+                <textarea data-en="Your Message..." data-ar="رسالتك..." id="messageArea" class="p-2 border-2 border-gray-400 w-full my-2 h-[250px] transition duration-300 rounded-sm focus:border-icon focus:ring-1 focus:ring-icon " name="message" id="message" placeholder="Your Message..."></textarea>
+                <button data-en="Send Message" data-ar="أرسل الرسالة" id="messageButton" class="bg-gray-100 hover:bg-icon hover:text-white transition-all duration-300 text-gray-950 px-2 py-3 rounded-md cursor-pointer w-full font-medium">Send Message</button>
+                <p data-en="*Check Your Data" data-ar="تحقق من البيانات" class="warningText text-red-600 bg-gray-100 w-fit p-1 font-bold mt-3 mx-auto hidden">*Check Your Data</p>
+        </div> 
+    </div>
+</section>
+<!--End Contact Us Section -->
+<footer class="py-5 bg-violet-950 border-t-2 border-gray-300">
+    <div class="container ">
+        <p data-en="© 2025 TimeMaster. All rights reserved." data-ar="© 2025 TimeMaster. جميع الحقوق محفوظة." class="text-gray-100 text-center font-bold"> © 2025 TimeMaster. All rights reserved.</p>
+        <p data-en="Follow us on social media:" data-ar="تابعونا على وسائل التواصل" class="text-gray-200 text-center font-medium mt-3">Follow us on social media:</p>
+        <div class="icons flex justify-center gap-5 mt-3">
+            <a href="#" aria-label="Facebook Link"><i class="demo-icon icon-facebook-squared text-icon text-xl hover:text-blue-600 transition-all duration-300"></i></a>
+            <a href="#" aria-label="Facebook Link"><i class="demo-icon icon-instagram text-icon text-xl hover:text-pink-600 transition-all duration-300"></i></a>
+            <a href="#" aria-label="Youtube Link"><i class="demo-icon icon-youtube-play text-icon text-xl hover:text-red-700 transition-all duration-300"></i></a>
+            <a href="#" aria-label="Twitter Link"><i class="demo-icon icon-twitter text-icon text-xl hover:text-cyan-500 transition-all duration-300"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="owlcarousel/jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="JS/aos.js"></script>
+<script src="JS/toastr.min.js"></script>
+<script src="JS/index.js"></script>
+</body>
+</html>
